@@ -1,0 +1,591 @@
+- id: 1
+  title: Attention Is All You Need
+  year: 2017
+  category: Architecture & Scaling
+  authors: []
+  source_url: https://arxiv.org/abs/1706.03762
+  pdf_path: 01-architecture-and-scaling/01-attention-is-all-you-need.pdf
+  key_concepts:
+  - attention
+  - transformer
+  - self-attention
+  prerequisites: []
+  builds_on: []
+  leads_to:
+  - '02'
+  - '03'
+  - '06'
+  status: downloaded
+- id: 2
+  title: 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'
+  year: 2018
+  category: Architecture & Scaling
+  authors: []
+  source_url: https://arxiv.org/abs/1810.04805
+  pdf_path: 01-architecture-and-scaling/02-bert.pdf
+  key_concepts:
+  - masked language modeling
+  - bidirectional encoding
+  - pretraining
+  prerequisites:
+  - '01'
+  builds_on:
+  - '01'
+  leads_to:
+  - '04'
+  status: downloaded
+- id: 3
+  title: Scaling Laws for Neural Language Models
+  year: 2020
+  category: Architecture & Scaling
+  authors: []
+  source_url: https://arxiv.org/abs/2001.08361
+  pdf_path: 01-architecture-and-scaling/03-scaling-laws-for-neural-language-models.pdf
+  key_concepts:
+  - scaling laws
+  - compute-optimal training
+  - power laws
+  prerequisites:
+  - '01'
+  builds_on:
+  - '01'
+  leads_to:
+  - '04'
+  - '05'
+  status: downloaded
+- id: 4
+  title: Language Models are Few-Shot Learners (GPT-3)
+  year: 2020
+  category: Architecture & Scaling
+  authors: []
+  source_url: https://arxiv.org/abs/2005.14165
+  pdf_path: 01-architecture-and-scaling/04-gpt-3.pdf
+  key_concepts:
+  - in-context learning
+  - few-shot learning
+  - autoregressive language model
+  prerequisites:
+  - '01'
+  - '03'
+  builds_on:
+  - '01'
+  - '03'
+  leads_to:
+  - '05'
+  - '07'
+  - '14'
+  status: downloaded
+- id: 5
+  title: Training Compute-Optimal Large Language Models (Chinchilla)
+  year: 2022
+  category: Architecture & Scaling
+  authors: []
+  source_url: https://arxiv.org/abs/2203.15556
+  pdf_path: 01-architecture-and-scaling/05-chinchilla.pdf
+  key_concepts:
+  - compute-optimal scaling
+  - data-parameter tradeoff
+  prerequisites:
+  - '03'
+  - '04'
+  builds_on:
+  - '03'
+  - '04'
+  leads_to:
+  - '16'
+  - '17'
+  status: downloaded
+- id: 6
+  title: 'Switch Transformer: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity'
+  year: 2022
+  category: Architecture & Scaling
+  authors: []
+  source_url: https://arxiv.org/abs/2101.03961
+  pdf_path: 01-architecture-and-scaling/06-switch-transformer.pdf
+  key_concepts:
+  - mixture-of-experts
+  - sparsity
+  - conditional computation
+  prerequisites:
+  - '01'
+  - '04'
+  builds_on:
+  - '01'
+  leads_to:
+  - '17'
+  status: downloaded
+- id: 7
+  title: Training Language Models to Follow Instructions with Human Feedback (InstructGPT)
+  year: 2022
+  category: Alignment & Multimodal
+  authors: []
+  source_url: https://arxiv.org/abs/2203.02155
+  pdf_path: 02-alignment-and-multimodal/01-instructgpt.pdf
+  key_concepts:
+  - RLHF
+  - instruction tuning
+  - reward modeling
+  prerequisites:
+  - '04'
+  builds_on:
+  - '04'
+  leads_to:
+  - '16'
+  - '28'
+  status: downloaded
+- id: 8
+  title: Learning Transferable Visual Models From Natural Language Supervision (CLIP)
+  year: 2021
+  category: Alignment & Multimodal
+  authors: []
+  source_url: https://arxiv.org/abs/2103.00020
+  pdf_path: 02-alignment-and-multimodal/02-clip.pdf
+  key_concepts:
+  - contrastive learning
+  - vision-language pretraining
+  - zero-shot transfer
+  prerequisites:
+  - '01'
+  builds_on:
+  - '01'
+  leads_to: []
+  status: downloaded
+- id: 9
+  title: Denoising Diffusion Probabilistic Models (DDPM)
+  year: 2020
+  category: Alignment & Multimodal
+  authors: []
+  source_url: https://arxiv.org/abs/2006.11239
+  pdf_path: 02-alignment-and-multimodal/03-ddpm.pdf
+  key_concepts:
+  - diffusion models
+  - generative modeling
+  - denoising
+  prerequisites: []
+  builds_on: []
+  leads_to: []
+  status: downloaded
+- id: 10
+  title: 'Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism'
+  year: 2019
+  category: Systems & Efficiency
+  authors: []
+  source_url: https://arxiv.org/abs/1909.08053
+  pdf_path: 03-systems-and-efficiency/01-megatron-lm.pdf
+  key_concepts:
+  - model parallelism
+  - tensor parallelism
+  - distributed training
+  prerequisites:
+  - '01'
+  builds_on:
+  - '01'
+  leads_to:
+  - '11'
+  - '17'
+  status: downloaded
+- id: 11
+  title: 'ZeRO: Memory Optimizations Toward Training Trillion Parameter Models'
+  year: 2019
+  category: Systems & Efficiency
+  authors: []
+  source_url: https://arxiv.org/abs/1910.02054
+  pdf_path: 03-systems-and-efficiency/02-zero.pdf
+  key_concepts:
+  - memory optimization
+  - data parallelism
+  - distributed training
+  prerequisites:
+  - '10'
+  builds_on:
+  - '10'
+  leads_to: []
+  status: downloaded
+- id: 12
+  title: Efficient Memory Management for Large Language Model Serving with PagedAttention (vLLM)
+  year: 2023
+  category: Systems & Efficiency
+  authors: []
+  source_url: https://arxiv.org/abs/2309.06180
+  pdf_path: 03-systems-and-efficiency/03-vllm-pagedattention.pdf
+  key_concepts:
+  - KV cache management
+  - inference serving
+  - paged memory
+  prerequisites:
+  - '01'
+  builds_on:
+  - '01'
+  leads_to: []
+  status: downloaded
+- id: 13
+  title: 'LoRA: Low-Rank Adaptation of Large Language Models'
+  year: 2021
+  category: Systems & Efficiency
+  authors: []
+  source_url: https://arxiv.org/abs/2106.09685
+  pdf_path: 03-systems-and-efficiency/04-lora.pdf
+  key_concepts:
+  - parameter-efficient fine-tuning
+  - low-rank decomposition
+  prerequisites:
+  - '01'
+  - '04'
+  builds_on:
+  - '04'
+  leads_to: []
+  status: downloaded
+- id: 14
+  title: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+  year: 2022
+  category: Reasoning & Test-Time Compute
+  authors: []
+  source_url: https://arxiv.org/abs/2201.11903
+  pdf_path: 04-reasoning-and-test-time-compute/01-chain-of-thought-prompting.pdf
+  key_concepts:
+  - chain-of-thought
+  - prompting
+  - emergent reasoning
+  prerequisites:
+  - '04'
+  builds_on:
+  - '04'
+  leads_to:
+  - '15'
+  - '16'
+  - '20'
+  status: downloaded
+- id: 15
+  title: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
+  year: 2024
+  category: Reasoning & Test-Time Compute
+  authors: []
+  source_url: https://arxiv.org/abs/2408.03314
+  pdf_path: 04-reasoning-and-test-time-compute/02-scaling-test-time-compute.pdf
+  key_concepts:
+  - test-time compute
+  - inference-time scaling
+  - verifier search
+  prerequisites:
+  - '14'
+  builds_on:
+  - '14'
+  leads_to:
+  - '16'
+  - '31'
+  status: downloaded
+- id: 16
+  title: 'DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning'
+  year: 2025
+  category: Reasoning & Test-Time Compute
+  authors: []
+  source_url: https://arxiv.org/abs/2501.12948
+  pdf_path: 04-reasoning-and-test-time-compute/03-deepseek-r1.pdf
+  key_concepts:
+  - reinforcement learning
+  - reasoning models
+  - self-verification
+  prerequisites:
+  - '07'
+  - '14'
+  - '15'
+  - '17'
+  builds_on:
+  - '07'
+  - '14'
+  - '17'
+  leads_to: []
+  status: downloaded
+- id: 17
+  title: DeepSeek-V3 Technical Report
+  year: 2024
+  category: Reasoning & Test-Time Compute
+  authors: []
+  source_url: https://arxiv.org/abs/2412.19437
+  pdf_path: 04-reasoning-and-test-time-compute/04-deepseek-v3.pdf
+  key_concepts:
+  - mixture-of-experts
+  - multi-head latent attention
+  - efficient pretraining
+  prerequisites:
+  - '05'
+  - '06'
+  - '10'
+  builds_on:
+  - '05'
+  - '06'
+  - '10'
+  leads_to:
+  - '16'
+  status: downloaded
+- id: 18
+  title: Universal Transformers
+  year: 2018
+  category: Latent Reasoning & World Models
+  authors: []
+  source_url: https://arxiv.org/abs/1807.03819
+  pdf_path: 05-latent-reasoning-and-world-models/01-universal-transformers.pdf
+  key_concepts:
+  - recurrence in depth
+  - adaptive computation
+  - weight sharing
+  prerequisites:
+  - '01'
+  builds_on:
+  - '01'
+  leads_to:
+  - '33'
+  status: downloaded
+- id: 19
+  title: Deep Equilibrium Models
+  year: 2019
+  category: Latent Reasoning & World Models
+  authors: []
+  source_url: https://arxiv.org/abs/1909.01377
+  pdf_path: 05-latent-reasoning-and-world-models/02-deep-equilibrium-models.pdf
+  key_concepts:
+  - implicit models
+  - fixed-point iteration
+  - infinite-depth networks
+  prerequisites:
+  - '01'
+  builds_on: []
+  leads_to: []
+  status: downloaded
+- id: 20
+  title: Training Large Language Models to Reason in a Continuous Latent Space (Coconut)
+  year: 2024
+  category: Latent Reasoning & World Models
+  authors: []
+  source_url: https://arxiv.org/abs/2412.06769
+  pdf_path: 05-latent-reasoning-and-world-models/03-coconut-chain-of-continuous-thought.pdf
+  key_concepts:
+  - latent reasoning
+  - continuous thought
+  - chain-of-thought alternative
+  prerequisites:
+  - '14'
+  builds_on:
+  - '14'
+  leads_to: []
+  status: downloaded
+- id: 21
+  title: A Path Towards Autonomous Machine Intelligence (JEPA)
+  year: 2022
+  category: Latent Reasoning & World Models
+  authors: []
+  source_url: https://openreview.net/forum?id=BZ5a1r-kVsf
+  pdf_path: null
+  key_concepts:
+  - joint embedding predictive architecture
+  - world models
+  - self-supervised learning
+  prerequisites:
+  - '01'
+  builds_on: []
+  leads_to: []
+  status: manual_download_required
+- id: 22
+  title: 'Learning to (Learn at Test Time): RNNs with Expressive Hidden States (TTT)'
+  year: 2024
+  category: Latent Reasoning & World Models
+  authors: []
+  source_url: https://arxiv.org/abs/2407.04620
+  pdf_path: 05-latent-reasoning-and-world-models/05-ttt-test-time-training.pdf
+  key_concepts:
+  - test-time training
+  - expressive hidden state
+  - sequence modeling
+  prerequisites:
+  - '01'
+  builds_on:
+  - '01'
+  leads_to: []
+  status: downloaded
+- id: 23
+  title: Solving Olympiad Geometry without Human Demonstrations (AlphaGeometry)
+  year: 2024
+  category: Neuro-Symbolic AI & Agents
+  authors: []
+  source_url: https://www.nature.com/articles/s41586-023-06747-5
+  pdf_path: null
+  key_concepts:
+  - neuro-symbolic reasoning
+  - synthetic data
+  - formal geometry
+  prerequisites:
+  - '01'
+  builds_on:
+  - '01'
+  leads_to:
+  - '24'
+  status: manual_download_required
+- id: 24
+  title: Advancing Mathematics Research with AI-Driven Formal Proof Search (AlphaProof)
+  year: 2026
+  category: Neuro-Symbolic AI & Agents
+  authors: []
+  source_url: https://arxiv.org/abs/2605.22763
+  pdf_path: 06-neuro-symbolic-and-agents/02-alphaproof.pdf
+  key_concepts:
+  - formal proof search
+  - reinforcement learning
+  - mathematical reasoning
+  prerequisites:
+  - '23'
+  builds_on:
+  - '23'
+  leads_to: []
+  status: downloaded
+- id: 25
+  title: On the Measure of Intelligence (ARC-AGI)
+  year: 2019
+  category: Neuro-Symbolic AI & Agents
+  authors: []
+  source_url: https://arxiv.org/abs/1911.01547
+  pdf_path: 06-neuro-symbolic-and-agents/03-arc-agi.pdf
+  key_concepts:
+  - intelligence measurement
+  - generalization
+  - abstraction and reasoning corpus
+  prerequisites: []
+  builds_on: []
+  leads_to: []
+  status: downloaded
+- id: 26
+  title: 'SWE-bench: Can Language Models Resolve Real-World GitHub Issues?'
+  year: 2024
+  category: Neuro-Symbolic AI & Agents
+  authors: []
+  source_url: https://arxiv.org/abs/2310.06770
+  pdf_path: 06-neuro-symbolic-and-agents/04-swe-bench.pdf
+  key_concepts:
+  - software engineering agents
+  - benchmark
+  - code repair
+  prerequisites:
+  - '04'
+  builds_on:
+  - '04'
+  leads_to: []
+  status: downloaded
+- id: 27
+  title: 'AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery'
+  year: 2025
+  category: Neuro-Symbolic AI & Agents
+  authors: []
+  source_url: https://arxiv.org/abs/2506.13131
+  pdf_path: 06-neuro-symbolic-and-agents/05-alphaevolve.pdf
+  key_concepts:
+  - evolutionary search
+  - LLM-guided code discovery
+  - agentic coding
+  prerequisites:
+  - '26'
+  builds_on:
+  - '26'
+  leads_to: []
+  status: downloaded
+- id: 28
+  title: Alignment Faking in Large Language Models
+  year: 2024
+  category: Safety & Governance
+  authors: []
+  source_url: https://arxiv.org/abs/2412.14093
+  pdf_path: 07-safety-and-governance/01-alignment-faking.pdf
+  key_concepts:
+  - deceptive alignment
+  - RLHF robustness
+  - model evaluation
+  prerequisites:
+  - '07'
+  builds_on:
+  - '07'
+  leads_to: []
+  status: downloaded
+- id: 29
+  title: 'Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond)'
+  year: 2025
+  category: Safety & Governance
+  authors: []
+  source_url: https://arxiv.org/abs/2510.22954
+  pdf_path: 07-safety-and-governance/02-artificial-hivemind.pdf
+  key_concepts:
+  - model homogeneity
+  - diversity collapse
+  - RLHF side effects
+  prerequisites:
+  - '07'
+  builds_on:
+  - '07'
+  leads_to: []
+  status: downloaded
+- id: 30
+  title: OWASP Top 10 for Agentic Applications (2026)
+  year: 2025
+  category: Safety & Governance
+  authors: []
+  source_url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+  pdf_path: 07-safety-and-governance/03-owasp-top-10-agentic-applications.pdf
+  key_concepts:
+  - agentic security
+  - tool misuse
+  - memory poisoning
+  prerequisites: []
+  builds_on: []
+  leads_to: []
+  status: downloaded
+- id: 31
+  title: 'When More Thinking Hurts: Overthinking in LLM Test-Time Compute Scaling'
+  year: 2026
+  category: Frontier & Future
+  authors: []
+  source_url: https://arxiv.org/abs/2604.10739
+  pdf_path: 08-frontier-and-future/01-when-more-thinking-hurts.pdf
+  key_concepts:
+  - overthinking
+  - test-time compute limits
+  - reasoning efficiency
+  prerequisites:
+  - '15'
+  builds_on:
+  - '15'
+  leads_to: []
+  status: downloaded
+- id: 32
+  title: 'System Card: Claude Fable 5.1 & Claude Mythos 5.1'
+  year: 2026
+  category: Frontier & Future
+  authors: []
+  source_url: https://www.anthropic.com/claude-fable-and-mythos-5-1
+  pdf_path: 08-frontier-and-future/02-claude-fable-5.1-system-card.pdf
+  key_concepts:
+  - adaptive thinking
+  - agentic safety evaluation
+  - system card
+  prerequisites:
+  - '07'
+  - '28'
+  builds_on:
+  - '07'
+  - '28'
+  leads_to: []
+  status: downloaded
+- id: 33
+  title: GPT-6 Astra System Card
+  year: 2026
+  category: Frontier & Future
+  authors: []
+  source_url: https://openai.com/index/gpt-6-astra/
+  pdf_path: 08-frontier-and-future/03-gpt-6-astra-system-card.pdf
+  key_concepts:
+  - recurrent depth reasoning
+  - chain-of-thought monitorability
+  - preparedness framework
+  prerequisites:
+  - '18'
+  - '07'
+  builds_on:
+  - '18'
+  leads_to: []
+  status: downloaded
